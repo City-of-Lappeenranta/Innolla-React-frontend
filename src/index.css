@@ -1,0 +1,880 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('/src/fonts/poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins-bold';
+  src: url('/src/fonts/poppins/Poppins-Bold.ttf');
+}
+html,
+body,
+#root {
+  background: transparent
+    linear-gradient(180deg, #bfe2f8 0%, #86c8f1 30%, #428ae4 67%, #1e69dc 100%)
+    0% 0% no-repeat padding-box !important;
+  height: 100%;
+  font-family: 'Poppins' !important;
+}
+.mdc-typography--body1 {
+  font-family: 'Poppins' !important;
+}
+.MuiInputBase-root {
+  font-family: 'Poppins' !important;
+}
+.MuiInputLabel-formControl {
+  font-family: 'Poppins' !important;
+}
+.mdc-drawer {
+  height: 100%;
+}
+.MuiPickersToolbar-toolbar
+  .MuiPickersClockPointer-pointer
+  .MuiPickersClock-pin
+  .MuiPickersToolbar-toolbar {
+  background-color: var(--blue) !important;
+}
+.mdc-drawer-app-content {
+  height: calc(100% - 96px);
+  text-align: center;
+  padding: 0px !important;
+}
+.home-background-image {
+  position: relative;
+  top: 5vh;
+
+  z-index: 0;
+}
+.home-background-image img {
+  max-width: 80%;
+  height: auto;
+}
+.profile-list-background-image {
+  position: relative;
+  top: 5vh;
+
+  z-index: 0;
+}
+.profile-list-background-image img {
+  max-width: 80%;
+  height: auto;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --mdc-theme-primary: #1c67dc;
+  --mdc-theme-secondary: #ff6e6e;
+  --mdc-theme-smiley: #d3ff6e;
+  --green-color: #33ce7f;
+  --yellow-color: #cebf33;
+  --red-color: #ff6e6e;
+  --blue-background: #f2faff;
+  --red-text: #de3112;
+  --sponsor-bar-bg: #216bdc;
+  --blue: #1c67dc;
+  --red-hover: #ac260e;
+  --red-active: #94200c;
+  --available-room: #00d9c0;
+  --available-room-light: #c5f8f1;
+  --reserved-room: #ffa49a;
+  --reserved-room-light: #fff1f0;
+  /* --mdc-theme-background: #121212;
+  --mdc-theme-text-primary-on-background: #ffffff;
+  --mdc-theme-text-secondary-on-background: #bfc7c7;
+  --mdc-theme-text-primary-on-dark: #ffffff;
+  --mdc-theme-on-secondary: #121212; */
+
+  --fc-event-text-color: var(--red-text);
+}
+
+.mdc-dialog__container {
+  width: 100%;
+}
+
+.mdc-dialog__surface {
+  width: 100%;
+}
+
+.mdc-text-field--file .mdc-text-field__input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.mdc-text-field--file input {
+  opacity: 0;
+}
+.mdc-text-field--file label {
+  right: 20px;
+  position: absolute;
+  top: 18px;
+}
+
+/* Notch */
+
+.mdc-notched-outline .mdc-floating-label.mdc-floating-label--float-above {
+  background: #fff;
+  padding: 0 5px 0 5px;
+}
+.mdc-notched-outline.mdc-notched-outline--upgraded {
+  top: 0 !important;
+}
+.mdc-text-field__input {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* List item disabled */
+.mdc-list-item.mdc-list-item--disabled {
+  cursor: default;
+  pointer-events: none;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%),
+    0px 0px 0px 0px rgb(0 0 0 / 12%);
+  color: rgba(0, 0, 0, 0.38) !important;
+}
+
+/* Calendar */
+
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+.rbc-time-header.rbc-overflowing {
+  display: none;
+}
+.rbc-time-content {
+  border-top: 0;
+}
+.rbc-event {
+  line-height: normal;
+}
+.fc .fc-scrollgrid,
+.fc .fc-scrollgrid-section > * {
+  border: 0;
+}
+
+/* Calendar - scroll bar */
+
+.rbc-time-view,
+.rbc-time-content {
+  border-radius: 4px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.rbc-time-content {
+  overflow: overlay;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Calendar - resize */
+
+@import 'react-big-calendar/lib/addons/dragAndDrop/styles.css';
+
+.rbc-addons-dnd-resize-ns-icon {
+  display: block !important;
+}
+
+/* Full calendar */
+
+.fc-timegrid-event {
+  border-width: 3px;
+  /* color: var(--mdc-theme-primary) ; */
+  color: green;
+}
+
+/* Description list */
+
+.mdc-data-table.rmwc-description-list .mdc-data-table__row {
+  white-space: break-spaces;
+  vertical-align: baseline;
+}
+.mdc-data-table.rmwc-description-list .mdc-data-table__row:first-child {
+  border: 0;
+}
+.mdc-data-table.rmwc-description-list .mdc-data-table__cell {
+  padding: 16px;
+}
+.mdc-data-table.rmwc-description-list .mdc-data-table__cell:last-child {
+  width: 100%;
+}
+
+/* Select */
+
+.mdc-select--dense .mdc-select__anchor,
+.mdc-select--dense .mdc-select__selected-text {
+  height: 40px;
+  line-height: 13px;
+}
+.mdc-select--dense .mdc-select__dropdown-icon {
+  bottom: 8px;
+}
+
+/* Dialog */
+
+.mdc-dialog.mdc-dialog--fullwidth .mdc-dialog__surface {
+  max-width: 96%;
+}
+
+.mdc-dialog__content {
+  overflow: visible;
+}
+
+/* Choices */
+
+.choices__inner {
+  box-sizing: border-box;
+}
+
+/* TopAppBar */
+
+.mdc-top-app-bar {
+  z-index: 7;
+}
+
+/* Drawer */
+
+.mdc-drawer {
+  background-color: var(--blue-background);
+  position: fixed;
+}
+.mdc-drawer--dismissible {
+  background-color: var(--blue-background);
+  color: var(--blue) !important;
+}
+.mdc-drawer__content {
+  background-color: var(--blue-background);
+}
+.mdc-floating-label--float-above {
+  background-color: var(--blue-background) !important;
+}
+body .mdc-drawer .mdc-list-item:not(.mdc-list-item--activated) {
+  color: var(--blue) !important;
+}
+body .mdc-drawer .mdc-list-item--activated {
+  background-color: var(--blue) !important;
+  color: #ffffff !important;
+  margin: 8px 8px 8px 0px !important;
+  padding: 0px 0px 0px 16px !important;
+}
+.mdc-drawer .mdc-list-item {
+  border-radius: 0px 20px 20px 0px !important;
+}
+.mdc-drawer__subtitle {
+  color: var(--blue) !important;
+}
+.mdc-notched-outline .mdc-floating-label.mdc-floating-label--float-above {
+  color: var(--mdc-theme-primary) !important;
+}
+.mdc-dialog .mdc-dialog__surface {
+  border-radius: 10px !important;
+  padding-bottom: 16px;
+}
+.mdc-dialog__actions {
+  padding-right: 3vw;
+}
+.mdc-dialog__title {
+  padding: 10px 24px 0px !important;
+}
+.mdc-button {
+  text-transform: none !important;
+  font-family: 'Poppins-Bold' !important;
+}
+.mdc-button.mdc-ripple-upgraded {
+  color: white;
+}
+.mdc-fab {
+  border-radius: 5px 5px 5px 5px !important;
+}
+.mdc-fab--extended--main-menu {
+  z-index: 5;
+  left: 5vw;
+  top: 2vw;
+  background-color: var(--blue-background) !important;
+  box-shadow: 0px 3px 3px #1d1c1c3d !important;
+  opacity: 1;
+  text-align: left;
+  font: normal normal bold 18px/24px 'Poppins';
+  letter-spacing: 0.17px;
+  color: var(--red-text);
+  opacity: 1;
+  text-transform: none !important;
+}
+.mdc-fab--extended {
+}
+.mdc-fab--extended .mdc-fab__ripple {
+  border-radius: 5px !important;
+}
+body .mdc-fab .mdc-fab__ripple:before:hover,
+body .mdc-fab .mdc-fab__ripple:after:hover {
+  background-color: var(--blue-background) !important;
+}
+body .mdc-fab .mdc-fab__ripple:before,
+body .mdc-fab .mdc-fab__ripple:after {
+  background-color: var(--blue-background) !important;
+}
+.body .mdc-fab .mdc-fab__ripple:before:active,
+body .mdc-fab .mdc-fab__ripple:after:active {
+  box-shadow: 0px 3px 3px #1d1c1c3d;
+}
+.mdc-fab:hover {
+  background-color: var(--blue-background) !important;
+  box-shadow: 0px 3px 3px #1d1c1c3d !important;
+  opacity: 1 !important;
+  color: var(--red-hover) !important;
+  text-align: left !important;
+  font: normal normal bold 18px/24px 'Poppins' !important;
+  letter-spacing: 0.17px !important;
+  border-radius: 5px !important;
+}
+.mdc-fab--extended:active {
+  color: var(--red-active) !important;
+  text-align: left !important;
+  font: normal normal bold 18px/24px 'Poppins' !important;
+  letter-spacing: 0.17px !important;
+}
+.mdc-button__label {
+  margin: 8px 8px 8px 0px !important;
+  padding: 0px 0px 0px 8px !important;
+}
+.main-welcome-text {
+  display: inline-block !important;
+  position: relative;
+  top: 10%;
+  z-index: 1;
+}
+.mdc-chip__text {
+  font-family: 'Poppins' !important;
+}
+.mdc-typography--subtitle1 {
+  font-family: 'Poppins' !important;
+}
+.mdc-tab__text-label {
+  font-family: 'Poppins' !important;
+}
+.mdc-typography--headline5 {
+  font-family: 'Poppins' !important;
+}
+.mdc-typography--headline6 {
+  font-family: 'Poppins' !important;
+}
+.mdc-list-item {
+  font-family: 'Poppins' !important;
+}
+.mdc-list-item__text {
+  font-family: 'Poppins' !important;
+}
+.mdc-layout-grid {
+  padding-top: 4vw !important;
+  font-family: 'Poppins' !important;
+}
+/* Use transform to correct the position of the bottom images relative to the viewport */
+.main-bottom-images {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  text-align: center;
+  top: 73vh;
+
+  background-color: var(--sponsor-bar-bg);
+}
+.main-bottom-images img {
+  display: inline-block;
+  height: auto;
+  vertical-align: middle;
+
+  margin: 1.5em;
+}
+#ophlogo,
+#innlogo {
+  height: 100px;
+  width: 100px;
+}
+#lprlogo {
+  height: 43px;
+  width: 136px;
+}
+
+/* TODO: 
+ * Catch overflows on .mdc-layout-grid__inner__profile-detail__taglist
+ * with phones and tablets, different limits for landscape and portrait.
+*/
+@media (max-width: 480px), (max-height: 480px) {
+  .main-bottom-images {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 118vh;
+    transform: translateY(-150%);
+    background-color: var(--sponsor-bar-bg);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .mdc-drawer-app-content {
+    overflow-y: scroll;
+  }
+  .main-bottom-images img {
+  }
+  .main-welcome-text {
+    top: -1vh !important;
+  }
+  .profile-list-background-image {
+    display: none !important;
+  }
+  .mdc-layout-grid__profile-details {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid-card {
+    min-height: 30vh;
+  }
+  .mdc-layout-grid__inner__profile-detail__taglist > div {
+    max-height: 40vw !important;
+    overflow-y: scroll;
+    font-family: 'Poppins' !important;
+  }
+}
+/* Landscapes */
+@media (min-width: 1024px) and (min-height: 768px) {
+  .main-welcome-text {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-background-image {
+  }
+  .mdc-layout-grid__assessment-details__usercard__inner__avatar__activity-title {
+    height: 2vw !important;
+  }
+  .mdc-layout-grid__assessment-details__usercard__inner__avatar__activity-titlename {
+    height: 2vw !important;
+  }
+  .mdc-layout-grid__profile-details__cell {
+  }
+  .mdc-layout-grid__assessment-detail__vocal-replies__innercell__card {
+    max-height: 35vh !important;
+  }
+  .mdc-layout-grid__assessment-detail__vocal-replies__innercell {
+    width: 47vw !important;
+  }
+  .mdc-layout-grid__profile-details__usercard__inner__avatar > img {
+    height: 10vw !important;
+  }
+  .mdc-layout-grid__profile-details__usercard {
+    grid-column-end: span 2;
+    width: 20vw !important;
+    margin: 0 !important;
+  }
+  .mdc-layout-grid__inner__profile-detail__taglist {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  .mdc-layout-grid__profile-activities-assesments {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+  .mdc-layout-grid__profile-details__usercard__inner {
+    margin: 1vw;
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid-card {
+    max-height: 18vw !important;
+  }
+  .mdc-layout-grid__inner__profile-detail__taglist > div {
+    max-height: 14vw !important;
+    overflow-y: scroll;
+  }
+  .mdc-layout-grid__cell--span-4,
+  .mdc-layout-grid__cell--span-4-desktop {
+    grid-column-end: span 6 !important;
+  }
+  .mdc-layout-grid__cell--span-10,
+  .mdc-layout-grid__cell--span-10-desktop {
+    grid-column-end: span 12 !important;
+  }
+  .mdc-layout-grid__assessment-detail__vocal-replies__innerrow {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid {
+    grid-column-end: span 4 !important;
+    max-height: 22.5vw !important;
+    overflow-y: scroll;
+  }
+}
+/* End of Landscapes */
+/* iPad Pro sized portraits */
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .mdc-layout-grid__assessment-detail__vocal-replies__innercell__card {
+    height: 50vh !important;
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid {
+    max-height: 50vh !important;
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid-card {
+    max-height: 50vh !important;
+  }
+}
+/* End of iPad Pro sized portraits */
+/* iPad Pro sized landscapes */
+@media (min-width: 1366px) and (min-height: 1024px) {
+  .mdc-layout-grid__assessment-detail__vocal-replies__innercell__card {
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid {
+    max-height: 30vw !important;
+  }
+  .mdc-layout-grid__profile-activities-assesments__activities-grid-card {
+    max-height: 30vw !important;
+  }
+}
+
+/* End of iPad Pro sized landscapes */
+.mdc-grid__profile-list {
+  background-color: var(--blue-background) !important;
+  margin-top: 5vw !important;
+  margin-left: 1vw !important;
+  border-radius: 10px !important;
+  max-width: 54vw !important;
+  padding: 1em !important;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+.mdc-list__profile-list {
+  box-shadow: 0px 3px 3px #00000029;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.mdc-list__profile-list-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mdc-layout-grid__profile-details {
+  background: var(--blue-background) 0% 0% no-repeat padding-box;
+  border-radius: 10px !important;
+  width: 90vw !important;
+  margin: auto !important;
+  margin-bottom: 1em !important;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+.mdc-layout-grid__profile-details__usercard {
+  width: 30vw;
+  margin: auto;
+}
+.mdc-layout-grid__profile-details_back-arrow {
+  float: left;
+}
+.mdc-layout-grid__profile-activities-assesments {
+  border-radius: 10px !important;
+  width: 90vw !important;
+  margin: auto !important;
+  margin-bottom: 3em !important;
+}
+.mdc-layout-grid__inner__profile-detail__taglist {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.mdc-layout-grid__inner__profile-detail__taglist > div {
+  max-height: 19vw;
+  overflow-y: scroll;
+}
+.mdc-button.mdc-ripple-upgraded.mdc-layout-grid__inner__profile-detail__taglist__skills {
+  background-color: white !important;
+}
+.mdc-button.mdc-ripple-upgraded.mdc-layout-grid__inner__profile-detail__taglist__development-target {
+  background-color: white !important;
+}
+.mdc-button.mdc-ripple-upgraded.mdc-layout-grid__inner__profile-detail__taglist__poi {
+  background-color: white !important;
+}
+.mdc-button.mdc-ripple-upgraded.mdc-layout-grid__inner__profile-detail__taglist__other {
+  background-color: white !important;
+}
+.mdc-button.mdc-ripple-upgraded.mdc-layout-grid__inner__profile-detail__taglist__showall {
+  border: 1px solid var(--red-text);
+  border-radius: 50px;
+  margin-bottom: 1em;
+}
+.mdc-layout-grid__profile-activities-assesments__activities-grid-card {
+  max-height: 33vw;
+  background-color: var(--blue-background) !important;
+}
+.mdc-layout-grid__profile-activities-assesments__activities-listitems > li {
+  border-radius: 10px !important;
+  background-color: white !important;
+  margin: 5px;
+}
+.mdc-layout-grid__profile-activities-assesments__activities-grid-card > div {
+  text-align: left;
+}
+.mdc-layout-grid__profile-details__usercard__inner__avatar > img {
+  height: 13vw;
+}
+.mdc-layout-grid__assessment-detail__smiley-container {
+  border-radius: 10px;
+  margin: auto;
+  width: 90vw;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell__card__list {
+  padding: 0px !important;
+  flex-shrink: 1 !important;
+  letter-spacing: normal !important;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innerrow {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell__card {
+  max-height: 50vw;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background-color: var(--blue-background) !important;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell {
+  width: 45vw;
+  margin: auto;
+  overflow-y: scroll;
+}
+.mdc-layout-grid__assessment-detail__useravatar {
+  border-radius: 10px;
+  background-color: var(--blue-background);
+  width: 45vw;
+  margin: auto;
+  padding: 12px;
+}
+.mdc-layout-grid__assessment-detail__backcell {
+  margin-bottom: 5px;
+  margin-left: 0px;
+  height: 16px;
+}
+.assessment-detail__image {
+  width: 40vw;
+  margin: auto;
+}
+.mdc-layout-grid__assessment-details__usercard__inner__avatar__activity-title {
+  font-size: 14px;
+  color: var(--red-text);
+  height: 2vw;
+  padding-bottom: 12px;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell__card__list__inneritem {
+  box-shadow: 0px 3px 3px #00000029;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell__card__list__inneritem__question-icon {
+  margin-left: 0px !important;
+  margin-right: 5px !important;
+}
+.mdc-layout-grid__assessment-detail__smiley-container__innercard {
+  border-radius: 10px;
+  background-color: var(--blue-background) !important;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell-left {
+  width: 45vw;
+  margin: auto;
+  overflow-y: scroll;
+}
+.mdc-layout-grid__profile-details__usercard__inner {
+  margin-top: 1vw;
+}
+.mdc-layout-grid__assessment-details__usercard__inner__avatar__activity-titlename {
+  height: 2vw;
+}
+
+.mdc-layout-grid__profile-details__cell {
+  height: 1vw;
+}
+.mdc-layout-grid__profile-activities-assesments__activities-grid {
+  max-height: 37vw;
+  overflow-y: scroll;
+  background-color: var(--blue-background);
+  padding: 2vw;
+  border-radius: 10px;
+}
+/* Reservable rooms */
+
+.mdc-layout-grid__reservable-room-list__main-grid {
+  background-color: var(--blue-background) !important;
+  padding: 3vw !important;
+  margin: 4vw !important;
+  border-radius: 10px;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__datetimes {
+  display: flex;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders {
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders > a {
+}
+.mdc-layout-grid__reservable-room-list__main-grid > div {
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  margin: auto !important;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__primary {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__secondary {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: start;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__primary__title {
+  z-index: 3;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile {
+  text-decoration: none;
+  color: black;
+  font: normal normal 400 12px/16px Poppins;
+  letter-spacing: 0.2px;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders {
+  border-radius: 5px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 3px #00000029;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__primary__content {
+  background: transparent 0% 0% no-repeat padding-box;
+  width: 13vw;
+  height: 13vw;
+  margin-left: 25%;
+  margin-top: 12.5%;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__reservation-title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  text-transform: uppercase;
+  padding: 5px;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__secondary__roomtitle {
+  text-align: start;
+  padding-bottom: 5px;
+}
+.mdc-layout-grid__reservable-room-list__main-grid__innercell__roomrenders__roomtile__reservation-title
+  > span {
+  font-size: 14px;
+  letter-spacing: 0.48px;
+}
+.mdc-layout-grid__activity-time-list-view > div {
+  background-color: var(--blue-background);
+  margin: 5vw;
+  padding: 2vw;
+  border-radius: 10px;
+}
+.mdc-layout-grid__profile-details__usercard__inner__avatar__unit-text {
+  font-size: 14px !important;
+  margin: 0 !important;
+  padding-bottom: 12px;
+}
+.mdc-layout-grid__profile-details__usercard__inner__avatar__username-text {
+  margin: 0 !important;
+  padding-top: 12px !important;
+}
+.mdc-card--outlined {
+  border-width: 0;
+}
+.mdc-card {
+  border-radius: 10px;
+}
+.mdc-layout-grid__inner__profile-detail__taglist__headers {
+  justify-self: start;
+}
+.mdc-layout-grid__assessment-detail__smiley-container__innercard__header {
+  text-align: start;
+}
+.mdc-layout-grid__assessment-detail__vocal-replies__innercell__card__header {
+  text-align: start;
+}
+.mdc-grid__profile-list__create-button  {
+}
+.mdc-grid__profile-list__create-button > span {
+  color: #ffffff !important;
+}
+.mdc-button.mdc-ripple-upgraded {
+  border-radius: 50px;
+  text-align: left;
+  font: normal normal 600 14px/19px Poppins;
+  letter-spacing: 0.21px;
+  background-color: #de3112;
+  opacity: 1;
+  border-radius: 50px !important;
+}
+.mdc-tab-assessment-detail__vocal-replies__tapbar > div {
+  color: red !important;
+}
+.mdc-tab--active .mdc-tab__text-label {
+  color: var(--red-text);
+}
+.mdc-tab-indicator .mdc-tab-indicator__content--underline {
+  border-color: var(--red-text);
+}
+.mdc-typography--headline6__room-reserve-dialog__room-title {
+  text-align: start;
+}
+.mdc-typography--headline6__room-reserve-dialog__room-capacity {
+  text-align: start;
+  font-size: 14px;
+}
+.mdc-dialog__button--cancel {
+  color: var(--red-text) !important;
+  border: 1px solid;
+  border-color: var(--red-text);
+  background-color: white !important;
+}
+.mdc-dialog__title {
+  font-family: 'Poppins' !important;
+  text-align: start;
+}
+.mdc-data-table.rmwc-description-list .mdc-data-table__cell {
+  font-family: 'Poppins' !important;
+  text-align: left;
+}
+.mdc-text-field--outlined .mdc-floating-label {
+  font-family: 'Poppins' !important;
+}
+.mdc-text-field--invalid .mdc-text-field__input {
+  caret-color: var(--red-text) !important;
+}
+.mdc-text-field .mdc-text-field__input {
+  border-color: var(--red-text);
+}
+.mdc-layout-grid__cell__activity-time-listview__activity-list {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.MuiFormControl-root__activity-time-listview__datepicker {
+  margin: 10px !important;
+}
+.mdc-layout-grid__cell__activity-time-detail-view__activity-time-grid-cell__card {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.mdc-card__activity-time-detail-view__participants-card {
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.mdc-layout-grid__assessment-detail-grid {
+}
+.mdc-layout-grid__assessment-detail-grid > .mdc-layout-grid__inner {
+  grid-template-columns: auto;
+}

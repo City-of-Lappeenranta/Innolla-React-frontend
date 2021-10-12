@@ -1,0 +1,78 @@
+{
+  "name": "innolla",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.2.7",
+    "@date-io/date-fns": "^1.3.13",
+    "@dream/lucid-orm": "^1.0.0",
+    "@fullcalendar/daygrid": "^5.5.0",
+    "@fullcalendar/interaction": "^5.5.0",
+    "@fullcalendar/react": "^5.5.0",
+    "@fullcalendar/timegrid": "^5.5.1",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/pickers": "^3.2.10",
+    "@sentry/react": "^6.1.0",
+    "apollo-upload-client": "^14.1.3",
+    "date-fns": "^2.16.1",
+    "env-cmd": "^10.1.0",
+    "graphql": "^15.4.0",
+    "lodash.merge": "^4.6.2",
+    "react": "^17.0.1",
+    "react-big-calendar": "^0.31.0",
+    "react-dom": "^17.0.1",
+    "react-extras": "^2.0.0",
+    "react-form": "^4.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "rmwc": "^6.1.4",
+    "typescript": "^4.3.4",
+    "use-async-effect": "^2.2.3",
+    "use-deep-compare-effect": "^1.4.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!your-module-name)/\"",
+    "eject": "react-scripts eject",
+    "generate": "graphql-codegen"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.20.0",
+    "@graphql-codegen/fragment-matcher": "2.0.1",
+    "@graphql-codegen/introspection": "1.18.1",
+    "@graphql-codegen/typescript": "1.20.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/apollo-upload-client": "^14.1.0",
+    "@types/jest": "^26.0.15",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.53",
+    "@types/react-big-calendar": "^0.30.0",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-form": "^4.0.1",
+    "@types/react-router-dom": "^5.1.6"
+  }
+}
